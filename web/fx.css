@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+body[fx-loading=fade] fx-load-frame {
+	opacity: 1;
+}
+
+fx-load-frame {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99999;
+}
+
+fx-load-frame.fade {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+fx-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+[fx-parallax] {
+	transform: translate(var(--parallax-x), var(--parallax-y));
+}

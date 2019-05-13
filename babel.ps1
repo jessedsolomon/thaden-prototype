@@ -1,0 +1,1 @@
+npx babel ./source/fx.js ./source/index.js --watch --presets "@babel/env" --out-file ./web/dist.js
